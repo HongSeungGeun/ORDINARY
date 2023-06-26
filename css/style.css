@@ -56,7 +56,7 @@ header {
 /* main */
 
 main {
-    margin-bottom: 300px;
+    margin-bottom: 400px;
 }
 
 .main-imgbox {
@@ -99,7 +99,7 @@ main {
 .section01 {
     width: 100%;
     height: 100%;
-    margin-bottom: 300px;
+    margin-bottom: 400px;
 }
 
 .about {
@@ -158,13 +158,13 @@ main {
 /* section02 */
 
 .section02 {
-    margin-bottom: 300px;
+    margin-bottom: 400px;
 }
 
 
 .section02 h2 {
     text-align: center;
-    margin-bottom: 150px;
+    margin-bottom: 200px;
     font-size: 50px;
 }
 
@@ -202,6 +202,65 @@ main {
 /* //section02 */
 
 
+/* section03 */
+.section03 {
+    margin-bottom: 400px;
+}
+
+.section03 h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 200px;
+}
+
+.movie-medal span {
+    margin-right: 15px;
+}
+
+.movie-medal p:first-child {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.drama-medal span {
+    margin-right: 15px;
+}
+
+.drama-medal p:first-child {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+/* //section03 */
+
+
+/* section04 */
+.section04-bg {
+    width: 1170px;
+    height: 765px;
+    background-image: url(../image/notices.jpg);
+}
+
+.notices {
+    text-align: center;
+}
+
+.notices-text01 {
+    width: 370px;
+    height: 200;
+    margin-top: 250px;
+    text-align: center;
+}
+
+.notices-text02 {
+    width: 270px;
+    height: 200px;
+    margin-top: 250px;
+    text-align: center;
+}
+
+
+
+/* //section04 */
 
 
 
@@ -210,7 +269,19 @@ main {
 
 
 
+/* footer */
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #eee;
+}
 
+footer div {
+    text-align: center;
+    padding-top: 70px;
+}
+
+/* //footer */
 
 
 
