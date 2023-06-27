@@ -17,6 +17,8 @@ img {
     display: block;
 }
 
+
+
 /* header */
 
 
@@ -53,6 +55,15 @@ header {
 /* //header */
 
 
+
+
+
+
+
+
+
+
+
 /* main */
 
 main {
@@ -74,7 +85,7 @@ main {
 .fixed-menu {
     position: fixed;
     top: 50%;
-    right: 50px;
+    left: 70px;
     transform: translate(-50%, -50%);
     width: 60px;
     height: 236px;
@@ -93,6 +104,28 @@ main {
 
 
 /* //main */
+
+
+
+/* menubar */
+
+.menubar {
+    width: 470px;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    z-index: 10;
+}
+
+
+
+
+/* //menubar */
+
+
 
 /* section01 */
 
@@ -149,9 +182,8 @@ main {
 }
 
 
-
-
 /* //section01 */
+
 
 
 
@@ -173,7 +205,7 @@ main {
 }
 
 .section02 .row:nth-child(7) {
-    margin-bottom: 0;
+    margin-bottom: 200px;
 }
 
 .section02-img img {
@@ -183,23 +215,27 @@ main {
 
 .w-box {
     width: 85%;
-    margin-top: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-left: 30px;
 }
 
-.drama-box1 {
-    margin-bottom: 80px;
+.drama-box1 span {
+    color: blue;
 }
 
-
-.movie-box1 {
-    margin-bottom: 60px;
+.movie-box1 span {
+    color: blue;
 }
 
-
-
+.movie-box2 {
+    line-height: 29px;
+}
 
 /* //section02 */
+
 
 
 /* section03 */
@@ -238,6 +274,7 @@ main {
     width: 1170px;
     height: 765px;
     background-image: url(../image/notices.jpg);
+    background-position: center;
 }
 
 .notices {
@@ -245,10 +282,19 @@ main {
 }
 
 .notices-text01 {
-    width: 370px;
-    height: 200;
+    width: 30px;
+    height: 200px;
     margin-top: 250px;
     text-align: center;
+    background-color: #DBE7F3;
+}
+
+.notices-text01 p:first-child {
+    margin-top: 45px;
+}
+
+.notices-text01 p:nth-child(2) {
+    font-size: 14px;
 }
 
 .notices-text02 {
@@ -256,6 +302,16 @@ main {
     height: 200px;
     margin-top: 250px;
     text-align: center;
+    background-color: #DBE7F3;
+}
+
+.notices-text02 p:first-child {
+    margin-top: 45px;
+}
+
+
+.notices-text02 p:nth-child(2) {
+    font-size: 14px;
 }
 
 
@@ -292,8 +348,6 @@ footer div {
     height: 100%;
     margin-top: 100px;
     text-align: center;
-    border: 1px solid black;
-    padding: 10px;
     font-weight: 600;
 }
 
