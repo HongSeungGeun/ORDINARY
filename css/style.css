@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 li {
@@ -41,14 +45,18 @@ header {
 }
 
 .header ul li {
-    padding: 25px;
+    padding: 1.8rem;
     line-height: 50px;
 }
 
 .header ul li:last-child i {
     width: 70%;
-    padding-top: 10px;
+    padding-top: 0.6rem;
     cursor: pointer;
+}
+
+.header ul li #open-btn {
+    visibility: visible;
 }
 
 
@@ -74,7 +82,6 @@ main {
     width: 100%;
     height: 980px;
     display: flex;
-    position: relative;
 }
 
 .main-imgbox div img {
@@ -82,42 +89,87 @@ main {
     height: 100%;
 }
 
-.fixed-menu {
-    position: fixed;
-    top: 50%;
-    left: 70px;
-    transform: translate(-50%, -50%);
-    width: 60px;
-    height: 236px;
-}
-
-.icon {
-    margin-bottom: 10px;
-}
-
-.icon img {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-}
-
-
 
 /* //main */
 
 
 
-/* menubar */
+/* menu-bar */
 
-.menubar {
-    width: 470px;
+.show {
+    display: none;
+    transition: all 0.6s;
+}
+
+.menu-bar {
+    width: 24.73%;
     height: 100vh;
-    background-color: black;
-    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0%;
     right: 0%;
     z-index: 10;
+}
+
+.menu-bar #close-btn {
+    margin-top: 2.4rem;
+    margin-left: 1.4rem;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-bar .bar01  {
+    margin-top: 2rem;
+}
+
+.menu-bar .bar01 li{
+    padding: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.menu-bar .bar01 li:last-child {
+    border-bottom: 1px solid white;
+    width: 80%;
+    margin: auto;
+}
+
+.menu-bar .bar01 li:last-child:hover {
+    background-color: transparent;
+    cursor: auto;
+}
+
+.menu-bar .bar01 li:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.menu-bar .bar02 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 4rem;
+    color: white;
+}
+
+
+.menu-bar .bar02 .icon {
+    width: 2rem;
+    height: 100%;
+    border-radius: 30%;
+}
+
+.menu-bar .bar03 {
+    margin-top: 5rem;
+    text-align: center;
+    color: white;
+}
+
+.menu-bar .bar03 li {
+    padding: 1rem;
 }
 
 
@@ -135,50 +187,60 @@ main {
     margin-bottom: 400px;
 }
 
-.about {
+.section01-img {
+    width: 35.26%;
+    height: 100%;
+}
+
+.section01-img img {
     width: 100%;
     height: 100%;
-    padding: 50px;
+}
+
+.about {
+    width: 25%;
+    height: 100%;
+    padding: 3rem;
     
 }
 
 .about-name {
     width: 90%;
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: 1.4rem;
     border-bottom: 1px solid black;
 }
 
 .about-name h2 {
-    margin-right: 50px;
+    margin-right: 5rem;
     font-weight: 700;
 }
 
 .about-name p {
-    margin-top: 15px;
+    margin-top: 1rem;
     font-weight: 600;
 }
 
 .about-profile {
-    margin-top: 30px;
+    margin-top: 2rem;
 }
 
 .about-profile span {
-    margin-right: 20px;
-    line-height: 30px;
+    margin-right: 1.5rem;
+    line-height: 1.8rem;
 }
 
 .about-profile p:nth-child(1) {
-    margin: 30px 0px;
+    margin: 2rem 0px;
 }
 
 .about-filmo p:nth-child(1){
-    margin: 30px 0px;
+    margin: 2rem 0px;
 }
 
 .about-filmo span {
-    margin-right: 20px;
-    line-height: 30px;
+    margin-right: 1.5rem;
+    line-height: 1.8rem;
 }
 
 
@@ -190,14 +252,18 @@ main {
 /* section02 */
 
 .section02 {
-    margin-bottom: 400px;
+    margin-bottom: 300px;
 }
 
 
 .section02 h2 {
     text-align: center;
     margin-bottom: 200px;
-    font-size: 50px;
+    font-size: 3rem;
+}
+
+.section02 p {
+    font-size: 1rem;
 }
 
 .section02 .row {
@@ -219,7 +285,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 30px;
+    margin-left: 2rem;
 }
 
 .drama-box1 span {
@@ -231,7 +297,7 @@ main {
 }
 
 .movie-box2 {
-    line-height: 29px;
+    line-height: 2rem;
 }
 
 /* //section02 */
@@ -245,33 +311,33 @@ main {
 
 .section03 h2 {
     text-align: center;
-    font-size: 50px;
+    font-size: 3rem;
     margin-bottom: 200px;
 }
 
 .movie-medal span {
-    margin-right: 15px;
+    margin-right: 1.5rem;
 }
 
 .movie-medal p:first-child {
-    font-size: 22px;
-    margin-bottom: 30px;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
 }
 
 .drama-medal span {
-    margin-right: 15px;
+    margin-right: 1.5rem;
 }
 
 .drama-medal p:first-child {
-    font-size: 22px;
-    margin-bottom: 30px;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
 }
 /* //section03 */
 
 
 /* section04 */
 .section04-bg {
-    width: 1170px;
+    width: 61.58%;
     height: 765px;
     background-image: url(../image/notices.jpg);
     background-position: center;
@@ -281,37 +347,41 @@ main {
     text-align: center;
 }
 
+.notices h2 {
+    font-size: 3rem;
+}
+
 .notices-text01 {
-    width: 30px;
-    height: 200px;
+    width: 18.42%;
+    height: 180px;
     margin-top: 250px;
     text-align: center;
-    background-color: #DBE7F3;
+    background-color: #dbe7f3;
 }
 
 .notices-text01 p:first-child {
-    margin-top: 45px;
+    margin-top: 2.5rem;
 }
 
 .notices-text01 p:nth-child(2) {
-    font-size: 14px;
+    font-size: 0.8rem;
 }
 
 .notices-text02 {
-    width: 270px;
-    height: 200px;
+    width: 14.21%;
+    height: 180px;
     margin-top: 250px;
     text-align: center;
     background-color: #DBE7F3;
 }
 
 .notices-text02 p:first-child {
-    margin-top: 45px;
+    margin-top: 2.5rem;
 }
 
 
 .notices-text02 p:nth-child(2) {
-    font-size: 14px;
+    font-size: 0.8rem;
 }
 
 
@@ -334,7 +404,7 @@ footer {
 
 footer div {
     text-align: center;
-    padding-top: 70px;
+    padding-top: 4.2rem;
 }
 
 /* //footer */
@@ -351,3 +421,604 @@ footer div {
     font-weight: 600;
 }
 
+@media screen and (min-width:1201px){
+    html {
+        font-size: 16px;
+    }
+
+    .section04-bg2 {
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width:992px) and (max-width:1200px){
+    html {
+        font-size: 15px;
+    }
+
+    /* main */
+
+    .main-img .main-imgbox .main-img1 {
+        display: none;
+    }
+
+    .main-img .main-imgbox .main-img2 {
+        margin: auto;
+    }
+
+    /* //main */
+
+    /* section01 */
+
+    .section01 .about {
+        width: 25%;
+        height: 100%;
+        padding: 1rem;
+    }
+
+    /* //section01 */
+
+    /* section02 */
+
+    .section02 .movie-box2 {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    /* //section02 */
+
+
+    /* section04 */
+
+    .section04-bg2 {
+        display: none;
+    }
+
+    .notices-text01 {
+        width: 100%;
+        height: 150px;
+    }
+
+    .notices-text01 p:first-child {
+        margin-top: 1.5rem;
+    }
+
+    .notices-text02 {
+        width: 100%;
+        height: 150px;
+    }
+
+    .notices-text02 p:first-child {
+        margin-top: 1.5rem;
+    }
+
+
+    /* //section04 */
+
+
+    /* footer */
+
+    footer {
+        width: 100%;
+        height: 170px;
+    }
+
+    footer div {
+        padding-top: 3.8rem;
+    }
+
+    /* //footer */
+}
+
+
+
+
+
+@media screen and (min-width:768px) and (max-width:991px){
+    html {
+        font-size: 16px;
+    }
+
+
+    /* header */
+
+    .header h1 {
+        font-size: 2rem;
+        margin-left: 0.5rem;
+    }
+
+    .header ul li:not(:nth-child(3)) {
+        display: none;
+    }
+    
+    .header ul li:last-child {
+        padding: 0.8rem;
+        padding-top: 1.7rem;
+    }
+
+    /* //header */
+
+
+    /* main */
+
+    main .main-img{
+        display: none;
+    }
+
+    main {
+        margin-bottom: 10vw;
+    }
+
+    /* //main */
+
+
+    /* section01 */
+
+    .section01-img {
+        display: none;
+    }
+
+    .about {
+        margin: auto;
+        background-image: url(../image/profile-opa.png);
+    }
+
+    .section01 {
+        margin-bottom: 50vw;
+    }
+
+
+    /* //section01 */
+
+
+    /* section02 */
+    .section02 h2{
+        font-size: 2.5rem;
+    }
+
+    .section02-img img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .drama-box2 {
+        display: none;
+    }
+
+    .movie-box2 {
+        display: none;
+    }
+
+
+
+    /* //section02 */
+
+
+    /* section03 */
+    .section03 h2 {
+        font-size: 2.5rem;
+    }
+
+    .movie-medal {
+        margin-bottom: 15vw;
+    }
+
+    .movie-text {
+        margin: auto;
+    }
+
+    .movie-medal p:first-child {
+        margin-bottom: 10vw;
+        text-align: center;
+    }
+
+    .drama-medal p:first-child {
+        margin: 10vw;
+        text-align: center;
+    }
+
+
+    /* //section03 */
+
+
+
+    /* scetion04 */
+    .section04-bg {
+        background-image: none;
+        height: 100%;
+    }
+
+    .notices {
+        margin-bottom: 20vw;
+    }
+
+    .notices-text01 {
+        margin: auto;
+        margin-bottom: 15vw;
+        height: 150px;
+        
+    }
+
+    .notices-text01 p:first-child {
+        margin-top: 1.5rem;
+    }
+
+    .notices-text02 {
+        height: 150px;
+        margin: auto;
+        margin-bottom: 25vw;
+    }
+
+    .notices-text02 p:first-child {
+        margin-top: 1.5rem;
+    }
+
+    .section04-bg2 img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    /* //scetion04 */
+
+
+    /* footer */
+    footer {
+        width: 100%;
+        height: 150px;
+    }
+
+    footer div {
+        padding-top: 2.5rem;
+    }
+    /* //footer */
+}
+
+
+
+
+@media screen and (min-width:576px) and (max-width:767px) {
+    html {
+        font-size: 14px;
+    }
+
+
+    /* header */
+
+    .header h1 {
+        font-size: 2rem;
+        margin-left: 0.5rem;
+    }
+
+    .header ul li:not(:nth-child(3)) {
+        display: none;
+    }
+    
+    .header ul li:last-child {
+        padding: 0.8rem;
+        padding-top: 1.7rem;
+    }
+
+    /* //header */
+
+
+    /* main */
+
+    main .main-img{
+        display: none;
+    }
+
+    main {
+        margin-bottom: 10vw;
+    }
+
+    /* //main */
+
+
+    /* section01 */
+
+    .section01-img {
+        display: none;
+    }
+
+    .about {
+        margin: auto;
+        background-image: url(../image/profile-opa.png);
+    }
+
+    .section01 {
+        margin-bottom: 50vw;
+    }
+
+
+    /* //section01 */
+
+
+    /* section02 */
+    .section02 h2{
+        font-size: 2.5rem;
+    }
+
+    .section02-img img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .drama-box2 {
+        display: none;
+    }
+
+    .movie-box2 {
+        display: none;
+    }
+
+
+
+    /* //section02 */
+
+
+    /* section03 */
+    .section03 h2 {
+        font-size: 2.5rem;
+    }
+
+    .movie-medal {
+        margin-bottom: 25vw;
+    }
+
+    .movie-text {
+        margin: auto;
+    }
+
+    .movie-medal p:first-child {
+        margin-bottom: 15vw;
+        text-align: center;
+    }
+
+    .drama-medal p:first-child {
+        margin: 15vw;
+        text-align: center;
+    }
+
+
+    /* //section03 */
+
+
+
+    /* scetion04 */
+    .section04-bg {
+        background-image: none;
+        height: 100%;
+    }
+
+    .notices {
+        margin-bottom: 20vw;
+    }
+
+    .notices-text01 {
+        margin: auto;
+        margin-bottom: 15vw;
+        height: 150px;
+        
+    }
+
+    .notices-text01 p:first-child {
+        margin-top: 2.2rem;
+    }
+
+    .notices-text02 {
+        height: 150px;
+        margin: auto;
+        margin-bottom: 25vw;
+    }
+
+    .notices-text02 p:first-child {
+        margin-top: 2.2rem;
+    }
+
+    .section04-bg2 img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    /* //scetion04 */
+
+
+    /* footer */
+    footer {
+        width: 100%;
+        height: 100px;
+    }
+
+    footer div {
+        padding-top: 2rem;
+    }
+    /* //footer */
+}
+
+
+
+
+
+
+@media screen and (min-width:360px) and (max-width:575px) {
+    html {
+        font-size: 12px;
+    }
+
+
+    /* header */
+
+    .header h1 {
+        font-size: 2rem;
+        margin-left: 0.5rem;
+    }
+
+    .header ul li:not(:nth-child(3)) {
+        display: none;
+    }
+    
+    .header ul li:last-child {
+        padding: 0.8rem;
+        padding-top: 1.7rem;
+    }
+
+    /* //header */
+
+
+    /* main */
+
+    main .main-img{
+        display: none;
+    }
+
+    main {
+        margin-bottom: 10vw;
+    }
+
+    /* //main */
+    
+
+    /* menu-bar */
+    .menu-bar .bar02 {
+        width: 100%;
+        height: 200px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* //menu-bar */
+
+
+    /* section01 */
+
+    .section01-img {
+        display: none;
+    }
+
+    .about {
+        margin: auto;
+        background-image: url(../image/profile-opa.png);
+    }
+
+    .section01 {
+        margin-bottom: 50vw;
+    }
+
+
+    /* //section01 */
+
+
+    /* section02 */
+    .section02 h2{
+        font-size: 2.5rem;
+    }
+
+    .section02-img img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    .drama-box2 {
+        display: none;
+    }
+
+    .movie-box2 {
+        display: none;
+    }
+
+
+
+    /* //section02 */
+
+
+    /* section03 */
+    .section03 h2 {
+        font-size: 2.5rem;
+    }
+
+    .movie-medal {
+        margin-bottom: 25vw;
+    }
+
+    .movie-text {
+        margin: auto;
+    }
+
+    .movie-medal p:first-child {
+        margin-bottom: 15vw;
+        text-align: center;
+    }
+
+    .drama-medal p:first-child {
+        margin: 15vw;
+        text-align: center;
+    }
+
+
+    /* //section03 */
+
+
+
+    /* scetion04 */
+    .section04-bg {
+        background-image: none;
+        height: 100%;
+    }
+
+    .notices {
+        margin-bottom: 20vw;
+    }
+
+    .notices-text01 {
+        margin: auto;
+        margin-bottom: 15vw;
+        height: 150px;
+        
+    }
+
+    .notices-text01 p:first-child {
+        margin-top: 2.2rem;
+    }
+
+    .notices-text02 {
+        height: 150px;
+        margin: auto;
+        margin-bottom: 25vw;
+    }
+
+    .notices-text02 p:first-child {
+        margin-top: 2.2rem;
+    }
+
+    .section04-bg2 img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    /* //scetion04 */
+
+
+    /* footer */
+    footer {
+        width: 100%;
+        height: 100px;
+    }
+
+    footer div {
+        padding-top: 2rem;
+    }
+    /* //footer */
+}

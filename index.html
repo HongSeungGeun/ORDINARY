@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Port</title>
+    <link rel="shortcut icon" href="./image/fabicon.ico">
     <link href="./css/style.css" rel="stylesheet" type="text/css">
     <link href="./css/bootstrap.min.css"  rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/ac31ddacbd.js" crossorigin="anonymous"></script>
@@ -20,7 +21,7 @@
                 <ul>
                     <li><a href="#">LOGIN</a></li>
                     <li><a href="#">JOIN</a></li>
-                    <li><i class="fa-solid fa-bars fa-2x"></i></li>
+                    <li id="open-btn"><i class="fa-solid fa-bars fa-2x"></i></li>
                 </ul>
             </div>
         </header>
@@ -30,11 +31,32 @@
         <!-- main -->
         <main>
 
-            <!-- menubar -->
-            <div class="menubar">
+            <!-- menu-bar -->
+
+            <div class="menu-bar show">
+                <div id="close-btn"><i class="fa-solid fa-x fa-2x"></i></div>
                 <nav>
-                    <ul>
-                        <li><a href="#"></a></li>
+                    <ul class="bar01">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">PHOTO</a></li>
+                        <li><a href="#">MULTIMEDIA</a></li>
+                        <li><a href="#">NEWS</a></li>
+                        <li><a href="#">NOTICES</a></li>
+                        <li></li>
+                    </ul>
+
+                    <ul class="bar02">
+                        <li><a href="https://www.instagram.com/boyoung0212_official/" target="_blank"><img class="icon" src="./image/instargram.png" alt="instar_logo"></a></li>
+                        <li><a href="https://cafe.daum.net/parkboyoungfd" target="_blank"><img class="icon" src="./image/daum.png" alt="daum_logo"></a></li>
+                        <li><a href="https://weverse.io/parkboyoung/feed" target="_blank"><img class="icon" src="./image/weverse.png" alt="weverse_logo"></a></li>
+                        <li><a href="https://bhent.co.kr/" target="_blank"><img class="icon" src="./image/bh.jpg" alt="bh_logo"></a></li>
+                    </ul>
+
+                    <ul class="bar03">
+                        <li><i class="fa-solid fa-phone"></i> +82-2-542-3724</li>
+                        <li><i class="fa-solid fa-print"></i> +82-2-542-3725</li>
+                        <li>서울시 강남구 논현로 142길 35 (06051)</li>
                     </ul>
                 </nav>
             </div>
@@ -45,32 +67,18 @@
 
 
             <!-- img -->
-            <div class="main-imgbox">
-                <div class="main-img1">
-                    <img src="./image/main1.jpg" alt="main1">
-                </div>
-                <div class="main-img2">
-                    <img src="./image/main2.jpg" alt="main2">
+            <div class="main-img">
+                <div class="main-imgbox">
+                    <div class="main-img1">
+                        <img src="./image/main1.jpg" alt="main1">
+                    </div>
+                    <div class="main-img2">
+                        <img src="./image/main2.jpg" alt="main2">
+                    </div>
                 </div>
             </div>
             <!-- //img -->
 
-            <!-- fixed-menu -->
-            <div class="fixed-menu">
-                <div class="icon">
-                    <a href="https://www.instagram.com/boyoung0212_official/" target="_blank"><img src="./image/instargram.png" alt="instar_logo"></a>
-                </div>
-                <div class="icon">
-                    <a href="https://cafe.daum.net/parkboyoungfd" target="_blank"><img src="./image/daum.png" alt="daum_logo"></a>
-                </div>
-                <div class="icon">
-                    <a href="https://weverse.io/parkboyoung/feed" target="_blank"><img src="./image/weverse.png" alt="weverse_logo"></a>
-                </div>
-                <div class="icon">
-                    <a href="https://bhent.co.kr/" target="_blank"><img src="./image/bh.jpg" alt="bh_logo"></a>
-                </div>
-            </div>
-            <!-- //fixed-menu -->
         </main>
         <!-- //main -->
 
@@ -80,32 +88,32 @@
             <!-- ProFile -->
             <div class="container">
                 <div class="row">
-                    <div class="col-5 about">
-                        <div class="about-name">
-                            <h2>박보영</h2>
-                            <p>PARK BO YOUNG</p>
+                        <div class="col-11 col-lg-5 about">
+                            <div class="about-name">
+                                <h2>박보영</h2>
+                                <p>PARK BO YOUNG</p>
+                            </div>
+                            <div class="about-profile">
+                                <p><strong>PROFILE</strong></p>
+                                <p><span>출생</span><span>1990년 2월 12일</span></p>
+                                <p><span>신장</span><span>158cm</span></p>
+                                <p><span>몸무게</span><span>44kg</span></p>
+                            </div>
+                            <div class="about-filmo">
+                                <p><strong>FILMOGRAPHY</strong></p>
+                                <p><span>2021</span><span>tvN 어느날 우리집 현관으로 멸망이 들어왔다.</span></p>
+                                <p><span>2019</span><span>tvN 어비스</span></p>
+                                <p><span>2018</span><span>영화 너의 결혼식</span></p>
+                                <p><span>2015</span><span>tvN 오 나의 귀신님</span></p>
+                            </div>
+                            <div class="about-more more-btn">
+                                <a href="#">M O R E +</a>
+                            </div>
                         </div>
-                        <div class="about-profile">
-                            <p><strong>PROFILE</strong></p>
-                            <p><span>출생</span><span>1990년 2월 12일</span></p>
-                            <p><span>신장</span><span>158cm</span></p>
-                            <p><span>몸무게</span><span>44kg</span></p>
-                        </div>
-                        <div class="about-filmo">
-                            <p><strong>FILMOGRAPHY</strong></p>
-                            <p><span>2021</span><span>tvN 어느날 우리집 현관으로 멸망이 들어왔다.</span></p>
-                            <p><span>2019</span><span>tvN 어비스</span></p>
-                            <p><span>2018</span><span>영화 너의 결혼식</span></p>
-                            <p><span>2015</span><span>tvN 오 나의 귀신님</span></p>
-                        </div>
-                        <div class="about-more more-btn">
-                            <a href="#">M O R E +</a>
-                        </div>
-                    </div>
                     <!-- //ProFile -->
 
                     <!-- ProFile-Img -->
-                    <div class="col-7">
+                    <div class="col-7 col-xs-0 section01-img">
                         <img src="./image/profile.jpg" alt="profile">
                     </div>
                     <!-- //ProFile-Img -->
@@ -297,23 +305,23 @@
             <div class="container">
                 <h2>수상내역🏆</h2>
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6">
                             <div class="movie-medal">
                                 <p><strong>영화 부문🥇</strong></p>
-                                <p><span>2009</span>  제6회 맥스무비 최고의 영화상 최고의 신인배우상</p>
-                                <p><span>2009</span>  제17회 대한민국문화연예대상 영화부문 신인상</p>
-                                <p><span>2009</span>  제46회 대종상영화제 여자 인기상</p>
-                                <p><span>2009</span>  제45회 백상예술대상 영화부문 여자 인기상</p>
-                                <p><span>2009</span>  제32회 황금촬영상 시상식 신인여우상</p>
-                                <p><span>2009</span>  제12회 디렉터스 컷 어워드 올해의 신인연기자상</p>
-                                <p><span>2009</span>  제30회 청룡영화상 신인여우상</p>
-                                <p><span>2012</span>  제4회 피어선 영상페스티벌 최고여자배우상</p>
-                                <p><span>2014</span>  제22회 대한민국문화연예대상 영화부문 우수연기상</p>
-                                <p><span>2015</span>  제15회 대한민국청소년영화제 여자배우부문 인기영화인</p>
-                                <p><span>2015</span>  제36회 청룡영화상 인기스타상</p>
+                                    <p><span>2009</span>  제6회 맥스무비 최고의 영화상 최고의 신인배우상</p>
+                                    <p><span>2009</span>  제17회 대한민국문화연예대상 영화부문 신인상</p>
+                                    <p><span>2009</span>  제46회 대종상영화제 여자 인기상</p>
+                                    <p><span>2009</span>  제45회 백상예술대상 영화부문 여자 인기상</p>
+                                    <p><span>2009</span>  제32회 황금촬영상 시상식 신인여우상</p>
+                                    <p><span>2009</span>  제12회 디렉터스 컷 어워드 올해의 신인연기자상</p>
+                                    <p><span>2009</span>  제30회 청룡영화상 신인여우상</p>
+                                    <p><span>2012</span>  제4회 피어선 영상페스티벌 최고여자배우상</p>
+                                    <p><span>2014</span>  제22회 대한민국문화연예대상 영화부문 우수연기상</p>
+                                    <p><span>2015</span>  제15회 대한민국청소년영화제 여자배우부문 인기영화인</p>
+                                    <p><span>2015</span>  제36회 청룡영화상 인기스타상</p>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6">
                             <div class="drama-medal">
                                 <p><strong>드라마 부문🥇</strong></p>
                                 <p><span>2007</span>  SBS 연기대상 여자 아역상</p>
@@ -338,7 +346,7 @@
                     <p>공지사항</p>
                 </div>
                     <div class="row">
-                        <div class="col-4  notices-text01">
+                        <div class="col-8  col-lg-4  notices-text01">
                             <p><strong>NETFLIX &#60;정신병동에도 아침이 와요&#62;</strong></p>
                             <p>
                                 배우 박보영 씨가 출연하는 NETFLIX 드라마 <br>
@@ -346,8 +354,8 @@
                                 2023년도 4분기에 방송 예정입니다.
                             </p>
                         </div>       
-                        <div class="col-5"></div>  <!-- 공백 -->
-                        <div class="col-3  notices-text02">
+                        <div class="col-12  col-lg-5"></div>  <!-- 공백 -->
+                        <div class="col-6  col-lg-3  notices-text02">
                                 <p><strong>영화 &#60;콘크리트 유토피아&#62;</strong></p>
                                 <p>
                                     배우 박보영씨가 출연하는 한국영화 <br>
@@ -355,6 +363,9 @@
                                     2023년 8월 개봉 예정입니다.
                                 </p>
                         </div>
+                    </div>
+                    <div class="section04-bg2">
+                        <img src="./image/notices-sm.png" alt="notices">
                     </div>
             </div>
         </section>
