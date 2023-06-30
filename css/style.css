@@ -564,6 +564,9 @@ footer div {
     .about {
         margin: auto;
         background-image: url(../image/profile-opa.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .section01 {
@@ -729,6 +732,8 @@ footer div {
     .about {
         margin: auto;
         background-image: url(../image/profile-opa.png);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .section01 {
@@ -868,7 +873,7 @@ footer div {
     
     .header ul li:last-child {
         padding: 0.8rem;
-        padding-top: 1.7rem;
+        padding-top: 2.4rem;
     }
 
     /* //header */
@@ -908,6 +913,8 @@ footer div {
     .about {
         margin: auto;
         background-image: url(../image/profile-opa.png);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .section01 {
