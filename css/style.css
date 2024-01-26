@@ -33,7 +33,9 @@ figure {
 #container {
     width: 100%;
     height: 100%;
+    position: relative;
 }
+
 
 #header {
     width: 100%;
@@ -435,10 +437,10 @@ figure {
 
 @keyframes 올라가고 {
     0% {
-        transform: translateX(-150px);
+        transform: translateX(0px);
     }
     50% {
-        transform: translateX(20px) skewX(-5deg);
+        transform: translateX(100px) skewX(-5deg);
     }
     100% { 
         transform: translateX(0);
@@ -447,10 +449,10 @@ figure {
 
 @keyframes 내려가고 {
     0% {
-        transform: translateX(150px);
+        transform: translateX(0px);
     }
     50% {
-        transform: translateX(-20px) skewX(-5deg);
+        transform: translateX(-100px) skewX(-5deg);
     }
     100% { 
         transform: translateX(0);
@@ -631,8 +633,53 @@ footer a {
 
 
 
+.hide {
+    display: none;
+}
 
+.black_bg {
+    position: absolute;
+    top: 0%;
+    height: 0%;
+    width: 1920px;
+    height: 1080px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
+.black_bg .modal {
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.black_bg .modal h3 {
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+.black_bg .modal p {
+    line-height: 30px;
+}
+
+.black_bg .modal p strong {
+    background-color: #D1A84B;
+}
+
+.black_bg .modal button {
+    margin-top: 60px;
+    border: none;
+    background-color: black;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+}
 
 
 

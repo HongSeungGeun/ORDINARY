@@ -1,3 +1,22 @@
+$(document).ready(function(){
+    $('.black_bg').show();
+})
+
+
+$('.close_btn').click(function(){
+    $('.black_bg').hide();
+})
+
+$('.black_bg').click(function(){
+    $('.black_bg').hide();
+})
+
+//  모달창
+
+
+
+
+
 // 스크롤 트리거 플러그인 활성화
 
 gsap.registerPlugin(ScrollTrigger) 
@@ -143,9 +162,4 @@ observer04.observe(four[7])
 
 
 
-// $('.multiple-items').slick({
-//     infinite: true,
-//     slidesToShow: 3,
-//     slidesToScroll: 3
-// });
 
