@@ -162,4 +162,86 @@ observer04.observe(four[7])
 
 
 
+let observer05 = new IntersectionObserver((e)=>{
+    e.forEach((프로젝트05)=>{
+        if(프로젝트05.isIntersecting){
+        프로젝트05.target.style.transform = 'scale(1)';
+        }else{
+        프로젝트05.target.style.transform = 'scale(1.2)';
+        }
+    })
 
+})
+
+let five = document.querySelectorAll('img')
+observer05.observe(five[9])
+observer05.observe(five[11])
+observer05.observe(five[14])
+
+
+
+
+let observer06 = new IntersectionObserver((e)=>{
+    e.forEach((프로젝트06)=>{
+        if(프로젝트06.isIntersecting){
+        프로젝트06.target.style.transform = 'scale(1.2)';
+        }else{
+        프로젝트06.target.style.transform = 'scale(1)';
+        }
+    })
+
+})
+
+let six = document.querySelectorAll('img')
+observer06.observe(six[11])
+
+
+
+
+let observer07 = new IntersectionObserver((e)=>{
+    e.forEach((프로젝트07)=>{
+        if(프로젝트07.isIntersecting){
+        프로젝트07.target.style.transform = 'scale(1)';
+        }else{
+        프로젝트07.target.style.transform = 'scale(0.8)';
+        }
+    })
+
+})
+
+let seven = document.querySelectorAll('img')
+observer07.observe(seven[14])
+
+
+
+
+let observer08 = new IntersectionObserver((e)=>{
+    e.forEach((프로젝트08)=>{
+        if(프로젝트08.isIntersecting){
+        프로젝트08.target.style.transform = 'translate(-30%, -50%)';
+        }else{
+        프로젝트08.target.style.transform = 'translate(-50%, -50%)';
+        }
+    })
+
+})
+
+let eight = document.querySelectorAll('div')
+observer08.observe(eight[34])
+
+
+
+
+let observer09 = new IntersectionObserver((e)=>{
+    e.forEach((프로젝트09)=>{
+        if(프로젝트09.isIntersecting){
+        프로젝트09.target.style.transform = 'translate(-70%, -50%)';
+        }else{
+        프로젝트09.target.style.transform = 'translate(-50%, -50%)';
+        }
+    })
+
+})
+
+let nine = document.querySelectorAll('div')
+observer09.observe(nine[35])

@@ -313,12 +313,12 @@ figure {
 
 .section03 .section03_img01 figure img {
     transform: scale(1.2);
-    transition: all 0.3s;
+    transition: all 1s;
 }
 
 .section03 .section03_img01 figure img:hover {
     transform: scale(1);
-    transition: all 0.3s;
+    transition: all 1s;
 }
 
 
@@ -331,12 +331,12 @@ figure {
 }
 
 .section04 .section04_img figure img{
-    transition: all 0.3s;
+    transition: all 1s;
 }
 
 .section04 .section04_img figure img:hover {
     transform: scale(1.2);
-    transition: all 0.3s;
+    transition: all 1s;
 }
 
 .section04 .section04_flex {
@@ -409,30 +409,34 @@ figure {
     transform: translate(-50%, -50%);
 }
 
-.section05 .section05_rotate {
+
+
+.section05 .section05_rotate01 {
     position: absolute;
     font-size: 5.2rem;
     rotate: 270deg; 
-    top: -7%;
+    top: -3%;
     right: -14%;
     transform: translate(-50%,-50%);
     color: white;
     text-shadow: 3px 3px 15px  #D1A84B;
+    transition: all 1s;
 }
 
-.section05 .section05_rotate h3:first-child {
-    margin-left : 100px;
+.section05 .section05_rotate02 {
+    position: absolute;
+    font-size: 5.2rem;
+    rotate: 270deg; 
+    top: -3%;
+    right: -21%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-shadow: 3px 3px 15px  #D1A84B;
+    transition: all 1s;
 }
 
-.section05 .section05_rotate:hover h3:first-child {
-    animation-name: 올라가고;
-    animation-duration: 1.3s;
-}
 
-.section05 .section05_rotate:hover h3:last-child {
-    animation-name: 내려가고;
-    animation-duration: 1.3s;
-}
+
 
 
 @keyframes 올라가고 {
@@ -473,12 +477,12 @@ figure {
 
 .section06 .section06_img figure img {
     transform: scale(0.8);
-    transition: all 0.3s;
+    transition: all 1s;
 }
 
 .section06 .section06_img figure img:hover {
     transform: scale(1);
-    transition: all 0.3s;
+    transition: all 1s;
 }
 
 .section06 .section06_img02 {
@@ -638,7 +642,7 @@ footer a {
 }
 
 .black_bg {
-    position: absolute;
+    position: fixed;
     top: 0%;
     height: 0%;
     width: 1920px;
